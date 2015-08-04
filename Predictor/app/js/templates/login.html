@@ -1,0 +1,37 @@
+
+<div class="login-box" ng-controller="loginCtrl as vm">
+    <div class="login-top">
+        <div>
+            <img class="login-logo" src="build/images/machorb3.ico">
+        </div>
+    </div>
+
+    <div class="login-content">
+        <form method="post" role="form" name="login">
+
+            <div>
+                <div class="input-group input-group-lg login-inputs">
+                    <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+                    <input type="text" class="form-control" placeholder="Username" ng-model="vm.user.userName" required>
+                </div>
+
+            </div>
+            <div>
+
+                <div class="input-group input-group-lg login-inputs">
+                    <span class="input-group-addon"><span class="fa fa-key"></span></span>
+                    <input type="password" class="form-control" placeholder="Password" ng-model="vm.user.password" required>
+                </div>
+
+            </div>
+            <div ng-show="vm.error" class="alert alert-danger text-center" style="font-size: 13pt !important;">
+                <strong>Error: </strong>{{vm.error.message}}
+            </div>
+            <div>
+                <button type="submit" class="btn btn-primary btn-lg login-button" ng-click="vm.login()">Submit</button>
+            </div>
+
+        </form>
+    </div>
+
+</div>

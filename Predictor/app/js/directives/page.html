@@ -1,0 +1,15 @@
+
+<div id="page-wrapper" ng-class="{open: isOpen}">
+    <div ng-if="vm.currentState == 'login'" style="padding-top: 5%;">
+        <ui-view></ui-view>
+    </div>
+
+    <div ng-if="vm.currentState != 'login'">
+        <sidebar></sidebar>
+        <div id="content-wrapper col-sm-12">
+            <ui-view></ui-view>
+        </div>
+    </div>
+
+</div>
+

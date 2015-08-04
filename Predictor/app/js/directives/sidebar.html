@@ -1,0 +1,67 @@
+<div id="sidebar-wrapper">
+    <ul class="sidebar">
+        <li class="sidebar-main">
+            <!--<a ng-click="toggleSidebar()">-->
+            <a href="#/" target="_self">
+                <div class="row  hidden-xs hidden-sm hidden-md" style="font-size: 15px;">
+                    Mach-Secure BI
+                </div>
+                <div class="row  hidden-xs hidden-sm hidden-md" style="font-size: 21px;">
+                    SmartView Matrix
+                </div>
+                <div class="hidden-lg menu-icon machIcon">
+                    <img src="build/images/machorb.ico" width="30" height="30">
+                </div>
+            </a>
+
+
+        </li>
+        <li class="sidebar-title current-user"><span><get-current-user></get-current-user></span></li>
+        <li class="sidebar-title"><span>NAVIGATION</span></li>
+        <li class="sidebar-list" ng-repeat="route in routes">
+            <a ui-sref="{{route.name}}">{{route.name | capitalize: "first"}} <span
+                    class="glyphicon glyphicon-{{route.config.icon}} menu-icon"></span> </a>
+        </li>
+
+        <li class="sidebar-list">
+
+        </li>
+        <li class="sidebar-list">
+            <a href="api/logout" target="_self">Logout <span class="fa fa-sign-out menu-icon"></span></a>
+        </li>
+    </ul>
+
+    <!--<div class="sidebar-footer3">-->
+    <!--<div class="col-sm-12" ng-if="currentUser != 'undefined'">-->
+    <!--<get-currentuser></get-currentuser>-->
+    <!--<div class="btn btn-default>" ng-click="logout()"><i class="fa fa-sign-out 2x"></i></div>-->
+    <!--</div>-->
+    <!--</div>-->
+
+    <div class="sidebar-footer3">
+
+        <!--<div class="col-sm-12">-->
+            <!--<div>-->
+                <!--<get-current-user></get-current-user>-->
+            <!--</div>-->
+
+            <!--<form  action="/logout">-->
+                <!--<button class="btn btn-default" type="submit"><i class="fa fa-sign-out 2x"></i></button>-->
+            <!--</form>-->
+        <!--</div>-->
+    </div>
+
+    <div class="sidebar-footer2 hidden-xs hidden-sm">
+        <div class="col-sm-12">
+            <img src="build/images/MachLogo.png" width="162" height="177">
+        </div>
+    </div>
+
+    <div class="sidebar-footer">
+        <div class="col-sm-12">
+            <a href="#/" target="_self">
+                Mach-Secure &copy; 2015
+            </a>
+        </div>
+    </div>
+</div>
