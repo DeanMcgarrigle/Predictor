@@ -26,5 +26,8 @@
     "fontawesome": "~4.3.0",
     "moment": "~2.10.3",
     "c3": "~0.4.10"
+  },
+  "resolutions": {
+    "angular": "1.4.3"
   }
 }
